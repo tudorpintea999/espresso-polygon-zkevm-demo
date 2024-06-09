@@ -185,7 +185,7 @@ impl SequencerZkEvmDemo {
             env = env.with_host_l1(host_l1_port);
         }
 
-        // Use a dummy URL for the trusted sequencer since we're not running one anyways.
+        // Use a dummy URL for the trusted sequencer since we're not running one anyway.
         let l1 = TestPolygonContracts::deploy(&env.l1_provider(), "http://dummy:1234").await;
 
         // Start zkevm-node
